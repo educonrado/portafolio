@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 1rem; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -11,12 +11,18 @@ body {
     height: 100px;
     border: solid 1px #ccc;
     border-radius: 50%;
-    overflow: auto;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     
     align-items: center;
+    
 }
+header {
+   display: inline-flex;
+}
+
+
 
 .head {
     border: solid 5px #313bca;
@@ -30,8 +36,81 @@ body {
     height: 40px;
     border-radius: 50% 50% 0 0;
     border: solid 5px #313bca;
+    border-bottom: none;
     
 }
+.frase {
+    font-size: 25px;
+    letter-spacing: 1.6px;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    border: dashed 1px #ccc;
+    height: fit-content
+}
+
+article {
+    display: block;
+    padding: 1rem;
+}
+
+article > p {
+    display: flex;
+    justify-content: center;
+}
+
+article > p > [class*="name-item"] , .item-union {
+    margin: 10px 5px;
+    border-radius: 5%;
+    padding: 3px;
+    height: fit-content;
+    
+}
+
+
+
+article > p> span:nth-child(even) {
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+
+.name-item-1 {
+    background-color: #23e03c;
+}
+.name-item-2 {
+    background-color: #2266d2;
+}
+.name-item-3 {
+    background-color: #5414ca;
+    color: #ccc;
+}
+.name-item-4 {
+    background-color: #b5df0e;
+}
+
+article > p:nth-child(1) {
+    padding: 10px 0;
+}
+
+article > p:nth-child(2) {
+    border-top: solid 1px #2266d2;
+    border-bottom: solid 1px #2266d2;
+    padding: 1rem;
+    font-size: large;
+}
+
+article > p:nth-child(3) {
+   
+    padding: 2rem;
+    font-size: larger;
+}
+
+
+
+
 
 /*
 #circle {
